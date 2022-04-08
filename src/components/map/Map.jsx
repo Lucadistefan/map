@@ -1,18 +1,18 @@
 import React from "react";
 import BingMapsReact from "bingmaps-react";
 
-function BingMap() {
+export default function BingMap() {
   return (
     <BingMapsReact
       bingMapsKey="AvUn0VtkLGGIJGIbPYby7IwGjHTc7I9iSZ7QACJ8OKlolJAdPgFNiNNBOiBjZmap"
-      height="500px"
+      height="70vh"
       mapOptions={{
         navigationBarMode: "square",
       }}
-      width="500px"
+      width="70vw"
       viewOptions={{
         center: { latitude: 42.360081, longitude: -71.058884 },
-        mapTypeId: "grayscale",
+        mapTypeId: "roadmap",
       }}
     />
   );
